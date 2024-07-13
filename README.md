@@ -3,8 +3,6 @@
 ## Status
 This repository is NOT REVIEWED and WORK IN PROGRESS.
 
-___ 
-
 ## Assignment
 Build a Phoenix app that models books and their pages, and that exposes two endpoints through an API. Make sure that your implementation is highly readable and tested. Not just code for yourself, but assume others must be able understand your code easily as well.
 
@@ -36,7 +34,5 @@ To keep the assignment simple, you do not have to implement the following:
 ___ 
 
 ## How to run the app
-
-___ 
 
 ## Endpoints
