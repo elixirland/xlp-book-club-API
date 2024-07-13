@@ -13,7 +13,6 @@ Build a Phoenix app that models books and their pages, and that exposes two endp
 - Each book can have multiple pages
 - Each page has text-only content
 - A book can have one active page (or none)
-- Book titles are not guarenteed to be unique
 
 **Note**: Do not worry to much about what it means for a page to be "active". In case it helps, you might interpret it as the chapter that was last read aloud by a teacher to their class.
 
