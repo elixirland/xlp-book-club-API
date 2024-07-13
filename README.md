@@ -21,7 +21,7 @@ Build a Phoenix app that models books and their pages, and that exposes two endp
 - Seeding inserts 4,000 books that each have 10 pages
 - Some seeded books have an active page, but not all
 
-**Note**: You can use the *Elixirland random generator* package to generate random titles and text content.
+**Note**: You can use the *Elixirland random generator* package to generate random titles and page content.
 
 TODO: Add link to Elixirland random generator on https://hexdocs.pm.
 
