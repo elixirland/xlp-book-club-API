@@ -4,7 +4,7 @@
 This repository is NOT REVIEWED and WORK IN PROGRESS.
 
 ## Assignment
-Build a Phoenix app that models books and their pages, and that exposes two endpoints through an API. Make sure that your implementation is highly readable and tested. Not just code for yourself, but assume others must be able understand your code easily as well.
+Build a Phoenix app that models books and their pages, and that exposes two endpoints through an API. Make sure that your implementation adheres to idiomatic Elixir and is tested well. Not just code for yourself, but assume others must be able easily understand your code as well.
 
 ### Requirements
 #### Data model
