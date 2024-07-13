@@ -15,6 +15,17 @@ Build a Phoenix app that models books and their pages, and that exposes two endp
 - A book can have one active page (or none)
 - Book titles are not guarenteed to be unique
 
+**Note**: Do not worry to much about what it means for a page to be "active". In case it helps, you might interpret it as the chapter that was last read aloud by a teacher to their class.
+
+#### Seeding
+- Running `mix ecto.setup` creates the database tables but also seeds the database
+- Seeding inserts 4,000 books that each have 10 pages
+- Some, but not all, seeded books have an active page
+
+**Note**: You can use the *Elixirland random generator* package to generate random titles and text content.
+
+TODO: Add link to Elixirland random generator on https://hexdocs.pm.
+
 #### API
 - An endpoint that fetching all books and allows for filtering by partial book title
 - An endpoint for fetching a book with its active chapter, or if non exisits, the first chapter
@@ -33,6 +44,6 @@ To keep the assignment simple, you do not have to implement the following:
 
 ___ 
 
-## How to run the app
+## Running the app and seeding the database
 
 ## Endpoints
