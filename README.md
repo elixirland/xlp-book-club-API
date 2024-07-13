@@ -11,7 +11,7 @@ Build a Phoenix app that models books and their pages, and that exposes two endp
 - Books and pages are stored in a PostgreSQL database
 - Each book has a title
 - Each book can have multiple pages
-- Each page has some text-only content
+- Each page has text-only content
 - A book can have one active page (or none)
 - Book titles are not guarenteed to be unique
 
