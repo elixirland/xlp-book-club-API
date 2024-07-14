@@ -42,6 +42,8 @@ To keep the assignment simple, you do not have to implement the following:
 - Rate limiting
 - Formatting of page text content
 
+### How to get started
+Fork this repository and implement your solution. The solution by Elixirland is located in the directory `/solution`.
 ___ 
 
 ## How to run and seed the app
