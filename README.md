@@ -1,4 +1,5 @@
 # Phoenix API
+This is an Elixirland assignment. Read an introduction to Elixirland here: https://github.com/elixirland.
 
 ## Status
 This repository is **NOT REVIEWED** and **WORK IN PROGRESS**.
