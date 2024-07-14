@@ -20,6 +20,7 @@ Build a Phoenix app that models books and their pages, and that exposes two endp
 - Running `mix ecto.setup` creates the database tables but also seeds the database
 - Seeding inserts 4,000 books that each have 10 pages
 - Some seeded books have an active page, but not all
+- Seeding is fast
 
 **Note**: You can use the *Elixirland random generator* package to generate random titles and page content.
 
@@ -43,6 +44,8 @@ To keep the assignment simple, you do not have to implement the following:
 
 ___ 
 
-## Running the app and seeding the database
+## How to run and seed the app
+*Insert your text here*
 
 ## Endpoints
+*Insert your text here*
