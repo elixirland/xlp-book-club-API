@@ -31,8 +31,10 @@ Build a Phoenix app that models books and their pages, and that exposes two endp
 - Both endpoints return JSON
 
 #### README
-- Instructions how to run the app
-- Instructions how to use the endpoints
+- A detailed manual that provides users with all the information they need
+- Includes information about what is stored in the database
+- Includes instructions about how to run and seed the app
+- Includes instructions how to use the endpoints
 
 ### Don't worry about
 To keep the assignment simple, you do not have to implement the following:
