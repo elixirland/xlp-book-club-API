@@ -46,4 +46,4 @@ To keep the assignment simple, you do not have to implement the following:
 ### How to get started
 Fork this repository and implement your solution in the Phoenix app at the root directory. The solution by Elixirland is located in the directory `/solution`.
 
-Alternatively, you can start a new Phoenix app using the mix command [`mix phx.new`](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.New.html).
+Alternatively, you can start a new Phoenix app by using the command `mix phx.new`. For more information, see the [mix phx.new](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.New.html) documentation.
