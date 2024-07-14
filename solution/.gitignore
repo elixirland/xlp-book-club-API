@@ -35,3 +35,5 @@ phoenix_api-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# Ignore .elixir_ls
+.elixir_ls
