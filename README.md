@@ -23,9 +23,7 @@ Build a Phoenix app that models books and their pages, and that exposes two endp
 - Some seeded books have an active page, but not all
 - Seeding is fast
 
-**Note**: You can use the *Elixirland random generator* package to generate random titles and page content.
-
-TODO: Add link to Elixirland random generator on https://hexdocs.pm.
+**Note**: You can use the [ExL Generator](https://hex.pm/packages/exl_generator) package to generate random titles and page content.
 
 #### API
 - An endpoint that fetching all books and allows for filtering by partial book title
