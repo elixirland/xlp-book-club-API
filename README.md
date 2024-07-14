@@ -45,10 +45,5 @@ To keep the assignment simple, you do not have to implement the following:
 
 ### How to get started
 Fork this repository and implement your solution in the Phoenix app at the root directory. The solution by Elixirland is located in the directory `/solution`.
-___ 
 
-## How to run and seed the app
-*Insert your text here*
-
-## Endpoints
-*Insert your text here*
+Alternatively, you can start a new Phoenix app using [`mix phx.new`](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.New.html).
