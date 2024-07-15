@@ -18,7 +18,7 @@ Books can have many pages. Pages have the following properties:
 
 - **content** (string): The text content of the page. The text content conists of plain text and newlines. It does not contain any formatting or heading syntax (in contrast to, for example, Markdown text).
 
-- **status** (string): The status of a page of a book. Possible values: "active" or "inactive". Each book can have one active page at most.
+- **status** (string): The status of a page of a book. The oossible values for status are: `"active"` and `"inactive"`. Each book can have one active page at most.
 
 ## Setting up the database
 
