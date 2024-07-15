@@ -47,7 +47,7 @@ By default, returns all books and orders them alphabetically by book title. See 
 #### Return data
 Returns a list of JSON objects with the properties `"book"` and `"page"`.
 
-If a book does not have any pages the `"page"` key is retrieved as `null`.
+If a book does not have any pages, the `"page"` key is retrieved as `null`.
 
 #### Example return data:
 
