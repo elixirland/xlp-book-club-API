@@ -1,5 +1,5 @@
-defmodule PhoenixApiWeb.ApiController do
-  use PhoenixApiWeb, :controller
+defmodule XlPhoenixAPIWeb.ApiController do
+  use XlPhoenixAPIWeb, :controller
 
   def books(conn, _params) do
     books = [

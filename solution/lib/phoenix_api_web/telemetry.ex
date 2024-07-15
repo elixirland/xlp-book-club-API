@@ -1,4 +1,4 @@
-defmodule PhoenixApiWeb.Telemetry do
+defmodule XlPhoenixAPIWeb.Telemetry do
   use Supervisor
   import Telemetry.Metrics
 
@@ -52,23 +52,23 @@ defmodule PhoenixApiWeb.Telemetry do
       ),
 
       # Database Metrics
-      summary("phoenix_api.repo.query.total_time",
+      summary("xl_phoenix_api.repo.query.total_time",
         unit: {:native, :millisecond},
         description: "The sum of the other measurements"
       ),
-      summary("phoenix_api.repo.query.decode_time",
+      summary("xl_phoenix_api.repo.query.decode_time",
         unit: {:native, :millisecond},
         description: "The time spent decoding the data received from the database"
       ),
-      summary("phoenix_api.repo.query.query_time",
+      summary("xl_phoenix_api.repo.query.query_time",
         unit: {:native, :millisecond},
         description: "The time spent executing the query"
       ),
-      summary("phoenix_api.repo.query.queue_time",
+      summary("xl_phoenix_api.repo.query.queue_time",
         unit: {:native, :millisecond},
         description: "The time spent waiting for a database connection"
       ),
-      summary("phoenix_api.repo.query.idle_time",
+      summary("xl_phoenix_api.repo.query.idle_time",
         unit: {:native, :millisecond},
         description:
           "The time the connection spent waiting before being checked out for the query"
@@ -86,7 +86,7 @@ defmodule PhoenixApiWeb.Telemetry do
     [
       # A module, function and arguments to be invoked periodically.
       # This function must call :telemetry.execute/3 and a metric must be added above.
-      # {PhoenixApiWeb, :count_users, []}
+      # {XlPhoenixAPIWeb, :count_users, []}
     ]
   end
 end

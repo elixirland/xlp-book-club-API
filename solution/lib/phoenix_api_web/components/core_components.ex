@@ -1,4 +1,4 @@
-defmodule PhoenixApiWeb.CoreComponents do
+defmodule XlPhoenixAPIWeb.CoreComponents do
   @moduledoc """
   Provides core UI components.
 
@@ -17,7 +17,7 @@ defmodule PhoenixApiWeb.CoreComponents do
   use Phoenix.Component
 
   alias Phoenix.LiveView.JS
-  import PhoenixApiWeb.Gettext
+  import XlPhoenixAPIWeb.Gettext
 
   @doc """
   Renders a modal.
@@ -650,9 +650,9 @@ defmodule PhoenixApiWeb.CoreComponents do
     # with our gettext backend as first argument. Translations are
     # available in the errors.po file (as we use the "errors" domain).
     if count = opts[:count] do
-      Gettext.dngettext(PhoenixApiWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(XlPhoenixAPIWeb.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(PhoenixApiWeb.Gettext, "errors", msg, opts)
+      Gettext.dgettext(XlPhoenixAPIWeb.Gettext, "errors", msg, opts)
     end
   end
 

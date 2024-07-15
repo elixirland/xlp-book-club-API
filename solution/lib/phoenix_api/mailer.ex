@@ -1,3 +1,3 @@
-defmodule PhoenixApi.Mailer do
-  use Swoosh.Mailer, otp_app: :phoenix_api
+defmodule XlPhoenixAPI.Mailer do
+  use Swoosh.Mailer, otp_app: :xl_phoenix_api
 end

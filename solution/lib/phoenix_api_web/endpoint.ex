@@ -1,12 +1,12 @@
-defmodule PhoenixApiWeb.Endpoint do
-  use Phoenix.Endpoint, otp_app: :phoenix_api
+defmodule XlPhoenixAPIWeb.Endpoint do
+  use Phoenix.Endpoint, otp_app: :xl_phoenix_api
 
   # The session will be stored in the cookie and signed,
   # this means its contents can be read but not tampered with.
   # Set :encryption_salt if you would also like to encrypt it.
   @session_options [
     store: :cookie,
-    key: "_phoenix_api_key",
+    key: "_xl_phoenix_api_key",
     signing_salt: "EZIoQ7y4",
     same_site: "Lax"
   ]
@@ -19,9 +19,9 @@ defmodule PhoenixApiWeb.Endpoint do
   # when deploying your static files in production.
   plug Plug.Static,
     at: "/",
-    from: :phoenix_api,
+    from: :xl_phoenix_api,
     gzip: false,
-    only: PhoenixApiWeb.static_paths()
+    only: XlPhoenixAPIWeb.static_paths()
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
@@ -29,7 +29,7 @@ defmodule PhoenixApiWeb.Endpoint do
     socket "/phoenix/live_reload/socket", Phoenix.LiveReloader.Socket
     plug Phoenix.LiveReloader
     plug Phoenix.CodeReloader
-    plug Phoenix.Ecto.CheckRepoStatus, otp_app: :phoenix_api
+    plug Phoenix.Ecto.CheckRepoStatus, otp_app: :xl_phoenix_api
   end
 
   plug Phoenix.LiveDashboard.RequestLogger,
@@ -47,5 +47,5 @@ defmodule PhoenixApiWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
-  plug PhoenixApiWeb.Router
+  plug XlPhoenixAPIWeb.Router
 end

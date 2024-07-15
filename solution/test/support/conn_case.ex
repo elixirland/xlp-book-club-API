@@ -1,4 +1,4 @@
-defmodule PhoenixApiWeb.ConnCase do
+defmodule XlPhoenixAPIWeb.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -11,7 +11,7 @@ defmodule PhoenixApiWeb.ConnCase do
   we enable the SQL sandbox, so changes done to the database
   are reverted at the end of every test. If you are using
   PostgreSQL, you can even run database tests asynchronously
-  by setting `use PhoenixApiWeb.ConnCase, async: true`, although
+  by setting `use XlPhoenixAPIWeb.ConnCase, async: true`, although
   this option is not recommended for other databases.
   """
 
@@ -20,19 +20,19 @@ defmodule PhoenixApiWeb.ConnCase do
   using do
     quote do
       # The default endpoint for testing
-      @endpoint PhoenixApiWeb.Endpoint
+      @endpoint XlPhoenixAPIWeb.Endpoint
 
-      use PhoenixApiWeb, :verified_routes
+      use XlPhoenixAPIWeb, :verified_routes
 
       # Import conveniences for testing with connections
       import Plug.Conn
       import Phoenix.ConnTest
-      import PhoenixApiWeb.ConnCase
+      import XlPhoenixAPIWeb.ConnCase
     end
   end
 
   setup tags do
-    PhoenixApi.DataCase.setup_sandbox(tags)
+    XlPhoenixAPI.DataCase.setup_sandbox(tags)
     {:ok, conn: Phoenix.ConnTest.build_conn()}
   end
 end

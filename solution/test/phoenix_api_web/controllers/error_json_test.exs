@@ -1,12 +1,12 @@
-defmodule PhoenixApiWeb.ErrorJSONTest do
-  use PhoenixApiWeb.ConnCase, async: true
+defmodule XlPhoenixAPIWeb.ErrorJSONTest do
+  use XlPhoenixAPIWeb.ConnCase, async: true
 
   test "renders 404" do
-    assert PhoenixApiWeb.ErrorJSON.render("404.json", %{}) == %{errors: %{detail: "Not Found"}}
+    assert XlPhoenixAPIWeb.ErrorJSON.render("404.json", %{}) == %{errors: %{detail: "Not Found"}}
   end
 
   test "renders 500" do
-    assert PhoenixApiWeb.ErrorJSON.render("500.json", %{}) ==
+    assert XlPhoenixAPIWeb.ErrorJSON.render("500.json", %{}) ==
              %{errors: %{detail: "Internal Server Error"}}
   end
 end
