@@ -1,7 +1,7 @@
 # Phoenix API
 The Phoenix API app is a Phoenix web application that serves as a public API for retrieving information about a collection of books stored in a database.
 
-## Data in database
+## Schemas
 ### Books
 Books have the following properties:
 
