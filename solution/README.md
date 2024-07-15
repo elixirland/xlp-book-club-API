@@ -45,9 +45,9 @@ An endpoint for retrieving the books from the database, along with their active 
 By default, returns all books. See the "Query Parameters" section for endpoint options.
 
 #### Return data
-Returns a list of JSON objects with the properties `"book"` and `"page"`.
+Returns a list of JSON objects with the properties `"book"` and `"page"`, ordered alphabetically by book title.
 
-If a book does not have any pages the `"page"` key has the value `null`.
+If a book does not have any pages the `"page"` key is retrieved as `null`.
 
 #### Example return data:
 
@@ -65,7 +65,7 @@ If a book does not have any pages the `"page"` key has the value `null`.
       "status": "active"
     }
   },
-    {
+  {
     "book": {
       "id": 11,
       "title": "The Hungry Kettle"
@@ -76,8 +76,15 @@ If a book does not have any pages the `"page"` key has the value `null`.
       "content": "With one last glance at the darkening forest,"...,
       "status": "inactive"
     }
+  },
+  {
+    "book": {
+      "id": 2,
+      "title": "Young Cloud On The Roof"
+    },
+    "page": null
   }
-]
+]  
 ```
 
 #### Query parameters
