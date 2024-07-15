@@ -6,18 +6,14 @@ The Phoenix API app is a Phoenix web application that serves as a public API for
 Books have the following properties:
 
 - **id** (integer): The unique identifier for the book.
-
 - **title** (string): The title of the book.
 
 ### Pages
 Books can have many pages. Pages have the following properties:
 
 - **id** (integer): The unique identifier for the page.
-
 - **order_index** (integer): A zero-based index that indicates the position of a page within a book.
-
 - **content** (string): The text content of the page. The text content conists of plain text and newlines. It does not contain any formatting or heading syntax (in contrast to, for example, Markdown text).
-
 - **status** (string): The status of a page of a book. The oossible values for status are: `"active"` and `"inactive"`. Each book can have one active page at most.
 
 ## Setting up the database
@@ -31,9 +27,7 @@ mix ecto.setup
 This command performs the following actions:
 
 1. **Creates the Database**: Sets up the database instance required for the application.
-
 1. **Creates Tables**: Generates all necessary tables within the database.
-
 1. **Seeds the Database**: Populates the database with 4,000 books that each have 10 pages. All book and page data is randomly generated.
 
 ## Endpoints
