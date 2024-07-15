@@ -14,7 +14,7 @@ Books can have many pages. Pages have the following properties:
 
 - **id** (integer): The unique identifier for the page.
 
-- **order_index** (integer): A zero-based index that indicates the position of a page within a book. This value is unique per book.
+- **order_index** (integer): A zero-based index that indicates the position of a page within a book.
 
 - **content** (string): The text content of the page. The content does not include any heading, italic, underline, or bold formatting.
 
