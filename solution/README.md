@@ -40,12 +40,12 @@ This command performs the following actions:
 The Phoenix API app exposes a collection of endpoints that all return JSON.
 
 ### GET `/api/books`
-An endpoint for retrieving the books from the database, along with their active page. If a book does not have an active page, the first page is retrieved.
+An endpoint for retrieving books from the database.
 
-By default, returns all books. See the "Query Parameters" section for endpoint options.
+By default, returns all books and orders them alphabetically by book title. See the "Query Parameters" section for endpoint options.
 
 #### Return data
-Returns a list of JSON objects with the properties `"book"` and `"page"`, ordered alphabetically by book title.
+Returns a list of JSON objects with the properties `"book"` and `"page"`.
 
 If a book does not have any pages the `"page"` key is retrieved as `null`.
 
