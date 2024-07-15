@@ -16,7 +16,7 @@ Books can have many pages. Pages have the following properties:
 
 - **order_index** (integer): A zero-based index that indicates the position of a page within a book.
 
-- **content** (string): The text content of the page. The content does not include any heading, italic, underline, or bold formatting.
+- **content** (string): The text content of the page. The text content conists of plain text and newlines. It does not contain any formatting or heading syntax (in contrast to, for example, Markdown text).
 
 - **status** (string): The status of a page of a book. Possible values: "active" or "inactive". Each book can have one active page at most.
 
