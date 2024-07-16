@@ -27,13 +27,14 @@ Build a Phoenix app that models books and their pages, and that exposes two endp
 
 #### Endpoints
 ##### GET `/api/books`
-- An endpoint that fetching all books in the alphabetical order of their title
+- An endpoint that fetching all books in the alphabetical order of their titles
+- Retrieves the books along with their active pages, or if non exisits, their first pages
 - Allows for filtering by partial book title
-- Fetches a book's active page, or if non exisits, the first page
 - Returns JSON
   
 ##### GET `/api/books/:id`
-- An endpoint for fetching a book with its active page, or if non exisits, the first page
+- An endpoint for fetching a specific book
+- Retrieves the book along with its active page, or if non exisits, its first page
 - Returns JSON
 
 #### README
