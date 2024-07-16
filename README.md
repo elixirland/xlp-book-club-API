@@ -25,10 +25,16 @@ Build a Phoenix app that models books and their pages, and that exposes two endp
 
 **Note**: You can use the [Xl Faker](https://hex.pm/packages/xl_faker) package to generate random titles and page content.
 
-#### API
-- An endpoint that fetching all books in alphabetical order (by book title) and allows for filtering by partial book title
-- An endpoint for fetching a book with its active chapter, or if non exisits, the first chapter
-- Both endpoints return JSON
+#### Endpoints
+##### GET `/api/books`
+- An endpoint that fetching all books in the alphabetical order of their title
+- Allows for filtering by partial book title
+- Fetches a book's active page, or if non exisits, the first page
+- Returns JSON
+  
+##### GET `/api/books/:id`
+- An endpoint for fetching a book with its active page, or if non exisits, the first page
+- Returns JSON
 
 #### README
 - A detailed manual that provides users with all the information they need
