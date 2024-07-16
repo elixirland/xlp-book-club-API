@@ -34,7 +34,7 @@ This command performs the following actions:
 The Phoenix API app exposes a collection of endpoints that all return JSON.
 
 ### GET `/api/books`
-An endpoint for retrieving books from the database.
+An endpoint for fetching all books, along with their active page. If a book does not have an active page, its first page is retrieved.
 
 By default, returns all books and orders them alphabetically by book title. See the "Query Parameters" section for endpoint options.
 
