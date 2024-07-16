@@ -33,6 +33,7 @@ defmodule XlPhoenixAPI.Books do
     |> with_active_or_last_page()
     |> order_by([b], asc: b.title)
     |> Repo.all()
+    |> clear_null_pages()
   end
 
   @doc """
@@ -53,6 +54,7 @@ defmodule XlPhoenixAPI.Books do
     from(b in Book, select: %{book: b})
     |> with_active_or_last_page()
     |> Repo.get(id)
+    |> clear_null_pages()
   end
 
   defp maybe_filter_by_partial_name(query, opts) do
@@ -85,5 +87,19 @@ defmodule XlPhoenixAPI.Books do
           status: p.status
         }
       }
+  end
+
+  defp clear_null_pages(resp) when is_list(resp) do
+    Enum.map(resp, fn
+      %{page: %{id: nil}} = map -> %{map | page: nil}
+      resp -> resp
+    end)
+  end
+
+  defp clear_null_pages(resp) do
+    case resp do
+      %{page: %{id: nil}} -> %{resp | page: nil}
+      resp -> resp
+    end
   end
 end

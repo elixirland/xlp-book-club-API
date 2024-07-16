@@ -8,7 +8,7 @@ defmodule PhoenixApiWeb.ApiControllerTest do
       conn = get(conn, ~p"/api/books")
 
       assert body = json_response(conn, 200)
-      assert [%{"book" => %{"id" => id}}] = body
+      assert [%{"book" => %{"id" => ^id}}] = body
     end
 
     test "successfully fetches books with a filter", %{conn: conn} do
@@ -94,7 +94,7 @@ defmodule PhoenixApiWeb.ApiControllerTest do
       book = insert!(:book)
       conn = get(conn, ~p"/api/books/#{book.id}")
 
-      assert json_response(conn, 200) == %{
+      assert json_response(conn, 200) |> IO.inspect() == %{
                "book" => %{
                  "id" => book.id,
                  "title" => book.title
