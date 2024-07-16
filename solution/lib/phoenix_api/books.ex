@@ -5,7 +5,7 @@ defmodule XlPhoenixAPI.Books do
 
   def list_books_with_active_or_first_page do
     from(b in Book, select: %{book: b})
-    |> with_active_page()
+    |> with_active_or_last_page()
     |> order_by([b], asc: b.title)
     |> Repo.all()
   end
@@ -16,11 +16,11 @@ defmodule XlPhoenixAPI.Books do
       where: b.id == ^id,
       select: %{book: b}
     )
-    |> with_active_page()
+    |> with_active_or_last_page()
     |> Repo.one()
   end
 
-  defp with_active_page(query) do
+  defp with_active_or_last_page(query) do
     pages_query =
       from p in Page,
         order_by: [
