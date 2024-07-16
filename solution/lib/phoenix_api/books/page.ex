@@ -13,6 +13,8 @@ defmodule XlPhoenixAPI.Books.Page do
           book_id: non_neg_integer()
         }
 
+  @derive {Jason.Encoder, only: [:id, :number, :content, :status]}
+
   @statuses [:active, :inactive]
 
   schema "pages" do
