@@ -9,7 +9,7 @@ defmodule XlPhoenixAPIWeb.ApiController do
   end
 
   def book(conn, %{"id" => id}) do
-    book = Books.get_book(id)
+    book = Books.get_book_with_active_or_first_page(id)
 
     json(conn, book)
   end
