@@ -1,20 +1,9 @@
-# Script for populating the database. You can run it as:
-#
-#     mix run priv/repo/seeds.exs
-#
-# Inside the script, you can read and write to any of your
-# repositories directly:
-#
-#     XlPhoenixAPI.Repo.insert!(%XlPhoenixAPI.SomeSchema{})
-#
-# We recommend using the bang functions (`insert!`, `update!`
-# and so on) as they will fail if something goes wrong.
-
 import Ecto.Query, only: [from: 2]
 alias XlPhoenixAPI.Repo
 alias XlPhoenixAPI.Books.{Book, Page}
 
 # Setup
+# Sets log level to :info for performance
 initial_log_level = Logger.level()
 Logger.configure(level: :info)
 IO.puts("Start database seeding")
@@ -41,7 +30,7 @@ books
 |> Enum.each(&Repo.insert_all(Book, &1))
 
 # Batch insert 10 pages per book
-# Some books with have an active page
+# Gives some books an active page
 book_ids =
   from(b in Book, select: b.id)
   |> Repo.all()
@@ -77,18 +66,3 @@ end_time = System.os_time(:millisecond)
 IO.puts("Finish database seeding")
 IO.puts("Seeded #{n_books} books in #{end_time - start_time}ms")
 Logger.configure(level: initial_log_level)
-
-# Plain
-# [seeding] Inserted 4000 books in 7377ms
-
-# With logger config
-# [seeding] Inserted 4000 books in 3169ms
-
-# With logger config and transaction
-# [seeding] Inserted 4000 books in 4056ms
-
-# With logger config and Repo
-# [seeding] Inserted 4000 books in 986ms
-
-# With logger config and Repo
-# Seeded 40000 books in 18261ms
