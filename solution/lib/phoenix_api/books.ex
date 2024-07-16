@@ -1,23 +1,44 @@
 defmodule XlPhoenixAPI.Books do
   import Ecto.Query, warn: false
   alias XlPhoenixAPI.Repo
-  alias XlPhoenixAPI.Books.Book
+  alias XlPhoenixAPI.Books.{Book, Page}
 
-  @spec create_book(String.t(), list(String.t())) ::
-          {:ok, Book.t()} | {:error, Ecto.Changeset.t()}
-
-  def create_book(title, page_texts) do
-    %Book{}
-    |> Book.changeset(%{
-      title: title,
-      pages: build_pages(page_texts)
-    })
-    |> Repo.insert()
+  def list_books_with_active_or_first_page do
+    from(b in Book, select: %{book: b})
+    |> with_active_page()
+    |> order_by([b], asc: b.title)
+    |> Repo.all()
   end
 
-  defp build_pages(page_texts) do
-    page_texts
-    |> Enum.with_index(1)
-    |> Enum.map(fn {content, number} -> %{content: content, number: number} end)
+  def get_book_with_active_or_first_page(id) do
+    from(
+      b in Book,
+      where: b.id == ^id,
+      select: %{book: b}
+    )
+    |> with_active_page()
+    |> Repo.one()
+  end
+
+  defp with_active_page(query) do
+    pages_query =
+      from p in Page,
+        order_by: [
+          desc: fragment("? = 'active'", p.status),
+          asc: p.number
+        ],
+        distinct: p.book_id
+
+    from q in query,
+      left_join: p in subquery(pages_query),
+      on: q.id == p.book_id,
+      select_merge: %{
+        page: %{
+          id: p.id,
+          content: p.content,
+          number: p.number,
+          status: p.status
+        }
+      }
   end
 end

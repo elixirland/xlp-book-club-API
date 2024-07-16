@@ -4,11 +4,12 @@ defmodule XlPhoenixAPI.Books.Book do
   alias XlPhoenixAPI.Books.Page
 
   @type t :: %__MODULE__{
-          __meta__: Ecto.Schema.Metadata.t(),
           id: non_neg_integer(),
           title: String.t(),
           pages: [Page.t()]
         }
+
+  @derive {Jason.Encoder, only: [:id, :title]}
 
   schema "books" do
     field :title, :string
