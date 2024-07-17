@@ -2,7 +2,7 @@
 This is an Elixirland assignment. Read an introduction to Elixirland here: https://github.com/elixirland.
 
 ## Status
-This repository is **NOT REVIEWED** yet. This status will be set to "reviewed" when enough feedback has been given on the code and documentation example in the `solution` directory.
+This repository is **NOT REVIEWED** and **WORK IN PROGRESS**. This status will be set to "reviewed" when enough feedback has been given on the code and documentation in the `solution` directory.
 
 You can provide feedback by [opening an issue](https://github.com/elixirland/xl-phoenix-api/issues/new) or contributing to this repository's [discussions](https://github.com/elixirland/xl-phoenix-api/discussions).
 
