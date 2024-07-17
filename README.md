@@ -2,7 +2,7 @@
 This is an Elixirland assignment. Read an introduction to Elixirland here: https://github.com/elixirland.
 
 ## Status
-This repository is **NOT REVIEWED** and **WORK IN PROGRESS**.
+This repository is **NOT REVIEWED** yet.
 
 ## Assignment
 Build a Phoenix app that models books and their pages, and that exposes two endpoints through an API. Make sure that your implementation adheres to idiomatic Elixir and is tested well. Not just code for yourself, but make sure others will understand your code as well.
