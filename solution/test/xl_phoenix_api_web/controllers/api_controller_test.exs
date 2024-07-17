@@ -26,6 +26,23 @@ defmodule PhoenixApiWeb.ApiControllerTest do
              ] = body
     end
 
+    test "successfully fetches all books when filter is empty", %{conn: conn} do
+      insert!(:book, title: "Banana")
+      insert!(:book, title: "Apple")
+      insert!(:book, title: "Cranberry")
+
+      conn = get(conn, ~p"/api/books?name=")
+
+      assert body = json_response(conn, 200)
+
+      assert length(body) == 3
+      # Check if all titles are present
+      assert ["Apple", "Banana", "Cranberry"] ==
+               body
+               |> Enum.map(fn %{"book" => %{"title" => title}} -> title end)
+               |> Enum.sort()
+    end
+
     test "returns empty list when no books are found", %{conn: conn} do
       conn = get(conn, ~p"/api/books")
 
@@ -45,6 +62,12 @@ defmodule PhoenixApiWeb.ApiControllerTest do
       conn = get(conn, ~p"/api/books/0")
 
       assert json_response(conn, 404)
+    end
+
+    test "returns a 404 when invalid id is given", %{conn: conn} do
+      conn = get(conn, ~p"/api/books/hi")
+
+      assert json_response(conn, 500)
     end
 
     test "fetches book with active page", %{conn: conn} do
@@ -94,7 +117,7 @@ defmodule PhoenixApiWeb.ApiControllerTest do
       book = insert!(:book)
       conn = get(conn, ~p"/api/books/#{book.id}")
 
-      assert json_response(conn, 200) |> IO.inspect() == %{
+      assert json_response(conn, 200) == %{
                "book" => %{
                  "id" => book.id,
                  "title" => book.title
