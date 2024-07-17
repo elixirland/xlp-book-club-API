@@ -49,6 +49,7 @@ To keep the assignment simple, you do not have to implement the following:
 - Client authentication and/or authorization
 - Rate limiting
 - Formatting of page text content
+- Pagination
 
 ### How to get started
 Fork this repository and implement your solution in the Phoenix app at the root directory. The solution by Elixirland is located in the directory `/solution`.
