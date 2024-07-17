@@ -13,14 +13,28 @@ defmodule XlPhoenixAPIWeb.ApiController do
   end
 
   def book(conn, %{"id" => id}) do
-    case Books.get_book_with_active_or_first_page(id) do
-      nil ->
+    case Integer.parse(id) do
+      :error ->
         conn
-        |> put_status(:not_found)
-        |> json(%{error: "Book not found"})
+        |> put_status(:bad_request)
+        |> json(%{error: "Invalid ID"})
 
-      book ->
-        json(conn, book)
+      {id, _} when id < 1 ->
+        conn
+        |> put_status(:bad_request)
+        |> json(%{error: "Invalid ID"})
+
+      {id, _} ->
+        case Books.get_book_with_active_or_first_page(id) do
+          nil ->
+            conn
+            |> put_status(:not_found)
+            |> json(%{error: "Book not found"})
+
+          book ->
+            json(conn, book)
+        end
     end
+
   end
 end

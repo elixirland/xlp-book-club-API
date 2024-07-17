@@ -59,15 +59,18 @@ defmodule PhoenixApiWeb.ApiControllerTest do
     end
 
     test "returns a 404 when the book does not exist", %{conn: conn} do
-      conn = get(conn, ~p"/api/books/0")
+      conn = get(conn, ~p"/api/books/1")
 
       assert json_response(conn, 404)
     end
 
-    test "returns a 404 when invalid id is given", %{conn: conn} do
-      conn = get(conn, ~p"/api/books/hi")
+    test "returns a bad request status when an invalid id is given", %{conn: conn} do
+      invalid_ids = ["hi123", "0", "-1"]
 
-      assert json_response(conn, 500)
+      for id <- invalid_ids do
+        conn = get(conn, ~p"/api/books/#{id}")
+        assert json_response(conn, :bad_request)
+      end
     end
 
     test "fetches book with active page", %{conn: conn} do
