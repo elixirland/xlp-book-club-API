@@ -1,12 +1,12 @@
 # Book Club
-This is an Elixirland assignment. Read an introduction to Elixirland here: https://github.com/elixirland.
+This is an Elixirland challenge. Read an introduction to Elixirland here: https://github.com/elixirland.
 
 ## Status
 This repository is **NOT REVIEWED** and **WORK IN PROGRESS**. This status will be set to "reviewed" when enough feedback has been given on the code and documentation in the `solution` directory.
 
 You can provide feedback by [opening an issue](https://github.com/elixirland/xlc-book-club/issues/new) or contributing to this repository's [discussions](https://github.com/elixirland/xlc-book-club/discussions).
 
-## Assignment
+## Challenge description
 ### Background
 Chris is in a bookclub and he want to make an simple web API to facilitate their group activities. His idea is to store books and keep track of the pages that are currently being read and discussed. The bookclub reads multiple books in parallel. There is already a system in place tracking who is reading what books, but what is missing is an easy way to pull up the page of a book that is currently being read.
 
@@ -48,7 +48,7 @@ Build a Phoenix app that models books and their pages, and that exposes two endp
 - Includes instructions how to use the endpoints
 
 ### Don't worry about
-To keep the assignment simple, you do not have to implement the following:
+To keep the challenge simple, you do not have to implement the following:
 
 - Client authentication and/or authorization
 - Rate limiting
