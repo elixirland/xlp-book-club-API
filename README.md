@@ -1,4 +1,4 @@
-# Xlc Book Club
+# Book Club
 This is an Elixirland assignment. Read an introduction to Elixirland here: https://github.com/elixirland.
 
 ## Status
