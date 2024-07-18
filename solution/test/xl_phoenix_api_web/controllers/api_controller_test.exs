@@ -1,4 +1,4 @@
-defmodule PhoenixApiWeb.ApiControllerTest do
+defmodule PhoenixApiWeb.APIControllerTest do
   use XlPhoenixAPIWeb.ConnCase, async: true
   import XlPhoenixAPI.Factory
 

@@ -17,8 +17,8 @@ defmodule XlPhoenixAPIWeb.Router do
   scope "/api", XlPhoenixAPIWeb do
     pipe_through :api
 
-    get "/books", ApiController, :books
-    get "/books/:id", ApiController, :book
+    get "/books", APIController, :books
+    get "/books/:id", APIController, :book
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development

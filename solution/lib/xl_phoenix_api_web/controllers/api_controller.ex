@@ -1,4 +1,4 @@
-defmodule XlPhoenixAPIWeb.ApiController do
+defmodule XlPhoenixAPIWeb.APIController do
   use XlPhoenixAPIWeb, :controller
   alias XlPhoenixAPI.Books
 
