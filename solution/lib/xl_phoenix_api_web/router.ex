@@ -14,10 +14,6 @@ defmodule XlPhoenixAPIWeb.Router do
     plug :accepts, ["json"]
   end
 
-  # scope "/", XlPhoenixAPIWeb do
-  #   pipe_through :browser
-  # end
-
   scope "/api", XlPhoenixAPIWeb do
     pipe_through :api
 
