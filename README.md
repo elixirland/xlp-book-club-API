@@ -1,4 +1,4 @@
-# Xl Phoenix API
+# Xl Bookclub
 This is an Elixirland assignment. Read an introduction to Elixirland here: https://github.com/elixirland.
 
 ## Status
@@ -7,7 +7,11 @@ This repository is **NOT REVIEWED** and **WORK IN PROGRESS**. This status will b
 You can provide feedback by [opening an issue](https://github.com/elixirland/xl-phoenix-api/issues/new) or contributing to this repository's [discussions](https://github.com/elixirland/xl-phoenix-api/discussions).
 
 ## Assignment
-Build a Phoenix app that models books and their pages, and that exposes two endpoints through an API. Make sure that your implementation adheres to idiomatic Elixir and is tested well. Not just code for yourself, but make sure others will understand your code as well.
+### Background
+Chris is in a bookclub and he want to make an simple web API to facilitate their group activities. His idea is to store books and keep track of the pages that are currently being read and discussed. The bookclub reads multiple books in parallel. There is already a system in place tracking who is reading what books, but what is missing is an easy way to pull up the page of a book that is currently being read.
+
+### Task
+Build a Phoenix app that models books and their pages, and that exposes two endpoints through an API. Make sure that your implementation meets the requirements outlined below, adheres to idiomatic Elixir and is tested well. Not just code for yourself, but make sure others will understand your code as well.
 
 ### Requirements
 #### Data model
@@ -17,15 +21,13 @@ Build a Phoenix app that models books and their pages, and that exposes two endp
 - Each page has text-only content
 - A book can have one active page (or none)
 
-**Note**: Do not worry to much about what it means for a page to be "active". In case it helps, you might interpret it as the chapter that was last read aloud by a teacher to their class.
-
 #### Seeding
 - Running `mix ecto.setup` creates the database tables but also seeds the database
 - Seeding inserts 4,000 books that each have 10 pages
 - Some seeded books have an active page, but not all
 - Seeding is fast
 
-**Note**: You can use the [Xl Faker](https://hex.pm/packages/xl_faker) package to generate random titles and page content.
+**Note**: You can use Elixirland's [Xl Faker](https://hex.pm/packages/xl_faker) package to generate random titles and page content.
 
 #### Endpoints
 ##### GET `/api/books`
