@@ -44,11 +44,8 @@ defmodule XlPhoenixAPIWeb.APIController do
 
   defp fetch_book(id) do
     case Books.get_book_with_active_or_first_page(id) do
-      nil ->
-        {:error, :not_found}
-
-      book ->
-        {:ok, book}
+      nil -> {:error, :not_found}
+      book -> {:ok, book}
     end
   end
 end
