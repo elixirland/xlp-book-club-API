@@ -1,5 +1,5 @@
 # Book Club
-This is an Elixirland challenge. Read an introduction to Elixirland here: https://github.com/elixirland.
+This is an Elixirland exercise. Read an introduction to Elixirland here: https://github.com/elixirland.
 
 ## Status
 This repository is **NOT REVIEWED** and **WORK IN PROGRESS**. This status will be set to "reviewed" when enough feedback has been given on the code and documentation in the `solution` directory.
@@ -51,7 +51,7 @@ Develop a Phoenix app that models books and their pages and exposes two endpoint
   - Includes instructions how to use the endpoints
 
 ### Don't worry about
-To keep the challenge simple, you do not have to implement the following:
+To keep the exercise simple, you do not have to implement the following:
 
   - Client authentication and/or authorization
   - Rate limiting
