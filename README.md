@@ -6,7 +6,7 @@ This repository is **NOT REVIEWED** and **WORK IN PROGRESS**. This status will b
 
 You can provide feedback by [opening an issue](https://github.com/elixirland/xlc-book-club/issues/new) or contributing to this repository's [discussions](https://github.com/elixirland/xlc-book-club/discussions).
 
-## Challenge description
+## Description
 ### Background
 Chris is a member of a book club and wants to develop a simple web API to streamline their group activities. His vision is to create a system that stores books and tracks the pages currently being read and discussed. The book club reads multiple books simultaneously. Although there is already a system in place for tracking who is reading which books, there is no easy way to find the current page being read in any given book.
 
