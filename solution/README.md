@@ -172,8 +172,8 @@ Returns a JSON object with the properties `"book"` and `"page"`. If a book does 
 ```
 {
   "book": {
-    "id": 8,
-    "title": "Blue Sky"
+    "id": 88,
+    "title": "The Large Collider"
   },
   "page": null
 }
