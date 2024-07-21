@@ -2,8 +2,8 @@
 This is an Elixirland exercise. Read an introduction to Elixirland here: https://github.com/elixirland.
 
 ## Status
-Exercise: *In Development*<br>
-Solution: *In Development*
+Exercise: ***In Development***<br>
+Solution: ***In Development***
 
 > [!NOTE]  
 > The possible statuses of exercise descriptions and example solutions are:
