@@ -2,9 +2,18 @@
 This is an Elixirland exercise. Read an introduction to Elixirland here: https://github.com/elixirland.
 
 ## Status
-This repository is **NOT REVIEWED** and **WORK IN PROGRESS**. This status will be set to "reviewed" when enough feedback has been given on the code and documentation in the `/solution` directory.
+Description: *In Development*<br>
+Solution:    *In Development*
 
-You can provide feedback by [opening an issue](https://github.com/elixirland/xlc-book-club/issues/new) or contributing to this repository's [discussions](https://github.com/elixirland/xlc-book-club/discussions).
+> [!NOTE]  
+> The possible statuses of exercise descriptions and example solutions are:
+> 
+>   1. **In Development**: Currently being developed and not ready for use.
+>   1. **Not Reviewed**: Available for use but has not been reviewed.
+>   1. **Reviewed**: Available for use and has been reviewed.
+
+> [!IMPORTANT]  
+> Exercises that are reviewed might still undergo changes, to ensure continuous improvement. You can provide feedback by [opening an issue](https://github.com/elixirland/xlc-book-club/issues/new) or contributing to this repository's [discussions](https://github.com/elixirland/xlc-book-club/discussions).
 
 ## Description
 ### Background
