@@ -5,7 +5,7 @@ This is a Phoenix web application that serves as a public API for retrieving inf
 
 To set up the application's database with all its tables and populate it with random books and pages, follow these steps:
 
-### Step 1: Set Up the Database
+### Step 1: Set up the database
 Run the following command to create an instance of the database, generate all necessary tables, and seed it with random data:
 
 ```
@@ -18,7 +18,7 @@ This command performs the following actions:
   - **Creates tables**: Generates all necessary tables within the database.
   - **Seeds the database**: Populates the database with 4,000 books, each having 10 pages. All book and page data is randomly generated.
 
-### Step 2: Start the Server
+### Step 2: Start the server
 To start the server, run the following command in your terminal at the root directory of the application:
 
 ```
