@@ -2,8 +2,8 @@ defmodule XlPhoenixAPIWeb.APIController do
   use XlPhoenixAPIWeb, :controller
   alias XlPhoenixAPI.Books
 
-  def books(conn, %{"name" => name}) do
-    books = Books.list_books_with_active_or_first_page(filter: name)
+  def books(conn, %{"title" => title}) do
+    books = Books.list_books_with_active_or_first_page(filter: title)
     json(conn, books)
   end
 

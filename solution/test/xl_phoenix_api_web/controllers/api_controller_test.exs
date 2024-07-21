@@ -16,7 +16,7 @@ defmodule PhoenixApiWeb.APIControllerTest do
       insert!(:book, title: "Red")
       insert!(:book, title: "Light blue")
 
-      conn = get(conn, ~p"/api/books?name=blue")
+      conn = get(conn, ~p"/api/books?title=blue")
 
       assert body = json_response(conn, 200)
 
@@ -31,7 +31,7 @@ defmodule PhoenixApiWeb.APIControllerTest do
       insert!(:book, title: "Apple")
       insert!(:book, title: "Cranberry")
 
-      conn = get(conn, ~p"/api/books?name=")
+      conn = get(conn, ~p"/api/books?title=")
 
       assert body = json_response(conn, 200)
 
