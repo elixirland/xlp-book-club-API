@@ -2,7 +2,7 @@
 This is an Elixirland exercise. Read an introduction to Elixirland here: https://github.com/elixirland.
 
 ## Status
-This repository is **NOT REVIEWED** and **WORK IN PROGRESS**. This status will be set to "reviewed" when enough feedback has been given on the code and documentation in the `solution` directory.
+This repository is **NOT REVIEWED** and **WORK IN PROGRESS**. This status will be set to "reviewed" when enough feedback has been given on the code and documentation in the `/solution` directory.
 
 You can provide feedback by [opening an issue](https://github.com/elixirland/xlc-book-club/issues/new) or contributing to this repository's [discussions](https://github.com/elixirland/xlc-book-club/discussions).
 
@@ -30,7 +30,8 @@ Develop a Phoenix app that models books and their pages and exposes two endpoint
   - Some seeded books have an active page, but not all
   - Seeding is fast
 
-**Note**: You can use Elixirland's [Xl Faker](https://hex.pm/packages/xl_faker) package to generate random titles and page content.
+> [!TIP]
+> You can use Elixirland's [Xl Faker](https://hex.pm/packages/xl_faker) package to generate random titles and page content.
 
 #### Endpoints
 ##### GET `/api/books`
