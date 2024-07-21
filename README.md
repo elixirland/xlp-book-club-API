@@ -51,7 +51,7 @@ Develop a Phoenix app that models books and their pages and exposes two endpoint
   - Includes instructions about how to run and seed the app
   - Includes instructions how to use the endpoints
 
-### Don't worry about
+### Assumptions
 To keep the exercise simple, you do not have to implement the following:
 
   - Client authentication and/or authorization
@@ -59,7 +59,9 @@ To keep the exercise simple, you do not have to implement the following:
   - Formatting of page text content
   - Pagination
 
+You may assume these issues are already handled somehow.
+
 ## How to get started
 Fork this repository and implement your solution in the Phoenix app at the root directory. The solution by Elixirland is located in the directory `/solution`.
 
-Alternatively, you can start a new Phoenix app by using the command `mix phx.new`. For more information, see the [mix phx.new](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.New.html) documentation.
+Alternatively, you can start a new app from your command line. Generate a new Phoenix app by using the command `mix phx.new` (see the [docs](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.New.html) for more information) or `mix new` to generate a new Mix project (see the [documentation](https://hexdocs.pm/mix/1.12/Mix.Tasks.New.html) for more information).
