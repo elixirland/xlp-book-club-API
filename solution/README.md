@@ -14,11 +14,9 @@ mix ecto.setup
 
 This command performs the following actions:
 
-- **Creates the database**: Initializes the required database instance for the application.
-
-- **Creates tables**: Generates all necessary tables within the database.
-
-- **Seeds the database**: Populates the database with 4,000 books, each having 10 pages. All book and page data is randomly generated.
+  - **Creates the database**: Initializes the required database instance for the application.
+  - **Creates tables**: Generates all necessary tables within the database.
+  - **Seeds the database**: Populates the database with 4,000 books, each having 10 pages. All book and page data is randomly generated.
 
 ### Step 2: Start the Server
 To start the server, run the following command in your terminal at the root directory of the application:
@@ -39,7 +37,7 @@ An endpoint for fetching all books, along with their active page. If a book does
 | 200         | OK                   |
 
 ### Query parameters
-- `name`: Filters books by their title. The filter is case-insensitive and matches partial names. For example, `/api/books?name=blue` returns all books with `"blue"` in their title, regardless of case.
+  - `name`: Filters books by their title. The filter is case-insensitive and matches partial names. For example, `/api/books?name=blue` returns all books with `"blue"` in their title, regardless of case.
 
 ### Response schema
 ```
