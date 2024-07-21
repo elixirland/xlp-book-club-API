@@ -74,3 +74,6 @@ You may assume these issues are already handled somehow.
 Fork this repository and implement your solution in the Phoenix app at the root directory. The solution by Elixirland is located in the directory `/solution`.
 
 Alternatively, you can start a new app from your command line. Generate a new Phoenix app by using the command `mix phx.new` (see the [docs](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.New.html) for more information) or `mix new` to generate a new Mix project (see the [documentation](https://hexdocs.pm/mix/1.12/Mix.Tasks.New.html) for more information).
+
+## Example solution
+You can find the Elixirland solution to this exercise in its GitHub repository, inside the `/solution` directory.
