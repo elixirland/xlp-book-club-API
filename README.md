@@ -2,7 +2,7 @@
 This is an Elixirland exercise. Read an introduction to Elixirland here: https://github.com/elixirland.
 
 ## Status
-Exercise: ***In Development***<br>
+Exercise: ***Not Reviewed***<br>
 Solution: ***In Development***
 
 > [!NOTE]  
