@@ -3,7 +3,7 @@ This is an Elixirland exercise. Read an introduction to Elixirland here: https:/
 
 ## Status
 Exercise: ***Not Reviewed***<br>
-Solution: ***In Development***
+Solution: ***Not Reviewed***
 
 > [!NOTE]  
 > The possible statuses of exercises and their example solutions are:
