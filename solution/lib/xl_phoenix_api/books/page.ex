@@ -21,16 +21,17 @@ defmodule XlPhoenixAPI.Books.Page do
     field :number, :integer
     field :content, :string
     field :status, Ecto.Enum, values: @statuses, default: :inactive
-
     belongs_to :book, Book
 
     timestamps()
   end
 
+  @doc false
   def changeset(page, attrs) do
     page
     |> cast(attrs, [:number, :content, :status, :book_id])
     |> validate_required([:number, :content, :status])
     |> validate_inclusion(:status, @statuses)
+    |> validate_number(:number, greater_than: 0)
   end
 end

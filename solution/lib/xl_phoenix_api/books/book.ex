@@ -13,12 +13,12 @@ defmodule XlPhoenixAPI.Books.Book do
 
   schema "books" do
     field :title, :string
-
     has_many :pages, Page
 
     timestamps()
   end
 
+  @doc false
   def changeset(book, attrs) do
     book
     |> cast(attrs, [:title])

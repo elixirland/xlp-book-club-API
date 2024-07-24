@@ -24,12 +24,11 @@ defmodule XlPhoenixAPI.Books do
   @spec list_books_with_active_or_first_page(opts :: Keyword.t()) :: [
           %{book: Book.t(), page: Page.t() | nil}
         ]
-
   def list_books_with_active_or_first_page(opts \\ []) do
     Book
     |> select([b], %{book: b})
     |> maybe_filter_by_partial_name(opts)
-    |> with_active_or_last_page()
+    |> with_active_or_first_page()
     |> order_by([b], asc: b.title)
     |> Repo.all()
   end
@@ -45,11 +44,10 @@ defmodule XlPhoenixAPI.Books do
   """
 
   @spec get_book_with_active_or_first_page(id()) :: %{book: Book.t(), page: Page.t() | nil}
-
   def get_book_with_active_or_first_page(id) do
     Book
     |> select([b], %{book: b})
-    |> with_active_or_last_page()
+    |> with_active_or_first_page()
     |> Repo.get(id)
   end
 
@@ -60,7 +58,7 @@ defmodule XlPhoenixAPI.Books do
     end
   end
 
-  defp with_active_or_last_page(query) do
+  defp with_active_or_first_page(query) do
     pages =
       from p in Page,
         order_by: [

@@ -19,7 +19,6 @@ defmodule PhoenixApiWeb.APIControllerTest do
       conn = get(conn, ~p"/api/books?title=blue")
 
       assert body = json_response(conn, 200)
-
       assert [
                %{"book" => %{"title" => "Blue"}},
                %{"book" => %{"title" => "Light blue"}}
@@ -34,9 +33,7 @@ defmodule PhoenixApiWeb.APIControllerTest do
       conn = get(conn, ~p"/api/books?title=")
 
       assert body = json_response(conn, 200)
-
-      assert length(body) == 3
-      # Check if all titles are present
+      # Verify that all titles are present, regardless of their order
       assert ["Apple", "Banana", "Cranberry"] ==
                body
                |> Enum.map(fn %{"book" => %{"title" => title}} -> title end)
@@ -45,31 +42,27 @@ defmodule PhoenixApiWeb.APIControllerTest do
 
     test "returns empty list when no books are found", %{conn: conn} do
       conn = get(conn, ~p"/api/books")
-
       assert json_response(conn, 200) == []
     end
   end
 
   describe "GET /api/books/:id" do
     test "successfully fetches a book", %{conn: conn} do
-      book = insert!(:book)
+      book = %{id: book_id} = insert!(:book)
       conn = get(conn, ~p"/api/books/#{book.id}")
-
-      assert json_response(conn, 200)
+      assert %{"book" => %{"id" => ^book_id}} = json_response(conn, 200)
     end
 
     test "returns a 404 when the book does not exist", %{conn: conn} do
       conn = get(conn, ~p"/api/books/1")
-
-      assert json_response(conn, 404)
+      assert %{"error" => _} = json_response(conn, 404)
     end
 
     test "returns a bad request status when an invalid id is given", %{conn: conn} do
       invalid_ids = ["hi123", "0", "-1"]
-
       for id <- invalid_ids do
         conn = get(conn, ~p"/api/books/#{id}")
-        assert json_response(conn, :bad_request)
+        assert %{"error" => _} = json_response(conn, :bad_request)
       end
     end
 

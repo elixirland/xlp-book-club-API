@@ -4,18 +4,18 @@ defmodule XlPhoenixAPIWeb.APIController do
 
   def books(conn, %{"title" => title}) do
     books = Books.list_books_with_active_or_first_page(filter: title)
-    json(conn, books)
+    render_pretty_json(conn, books)
   end
 
   def books(conn, _params) do
     books = Books.list_books_with_active_or_first_page()
-    json(conn, books)
+    render_pretty_json(conn, books)
   end
 
   def book(conn, %{"id" => id}) do
     with {:ok, id} <- parse_id(id),
          {:ok, book} <- fetch_book(id) do
-      json(conn, book)
+      render_pretty_json(conn, book)
     else
       {:error, :invalid_id} ->
         conn
@@ -29,16 +29,18 @@ defmodule XlPhoenixAPIWeb.APIController do
     end
   end
 
+  defp render_pretty_json(conn, data) do
+    json_string = Jason.encode!(data, pretty: true)
+    conn
+    |> put_resp_content_type("application/json")
+    |> send_resp(200, json_string)
+  end
+
   defp parse_id(id) do
     case Integer.parse(id) do
-      :error ->
-        {:error, :invalid_id}
-
-      {id, _} when id < 1 ->
-        {:error, :invalid_id}
-
-      {id, _} ->
-        {:ok, id}
+      :error -> {:error, :invalid_id}
+      {id, _} when id < 1 -> {:error, :invalid_id}
+      {id, _} -> {:ok, id}
     end
   end
 
