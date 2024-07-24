@@ -11,6 +11,13 @@ defmodule XlPhoenixAPI.Repo.Migrations.AddPagesTable do
       timestamps()
     end
 
+    create unique_index(
+             :pages,
+             [:book_id, :status],
+             where: "status = 'active'",
+             name: :max_one_active_page_per_book
+           )
     create unique_index(:pages, [:number, :book_id])
+    create constraint(:pages, :valid_number, check: "number > 0")
   end
 end
