@@ -1,6 +1,6 @@
 import Ecto.Query, only: [from: 2]
-alias XlPhoenixAPI.Repo
-alias XlPhoenixAPI.Books.{Book, Page}
+alias BookClub.Repo
+alias BookClub.Books.{Book, Page}
 
 # Setup
 # Sets log level to :info for performance

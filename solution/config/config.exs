@@ -7,17 +7,17 @@
 # General application configuration
 import Config
 
-config :xl_phoenix_api,
-  ecto_repos: [XlPhoenixAPI.Repo]
+config :book_club,
+  ecto_repos: [BookClub.Repo]
 
 # Configures the endpoint
-config :xl_phoenix_api, XlPhoenixAPIWeb.Endpoint,
+config :book_club, BookClubWeb.Endpoint,
   url: [host: "localhost"],
   render_errors: [
-    formats: [html: XlPhoenixAPIWeb.ErrorHTML, json: XlPhoenixAPIWeb.ErrorJSON],
+    formats: [html: BookClubWeb.ErrorHTML, json: BookClubWeb.ErrorJSON],
     layout: false
   ],
-  pubsub_server: XlPhoenixAPI.PubSub,
+  pubsub_server: BookClub.PubSub,
   live_view: [signing_salt: "2W7p8u8S"]
 
 # Configures the mailer
@@ -27,7 +27,7 @@ config :xl_phoenix_api, XlPhoenixAPIWeb.Endpoint,
 #
 # For production it's recommended to configure a different adapter
 # at the `config/runtime.exs`.
-config :xl_phoenix_api, XlPhoenixAPI.Mailer, adapter: Swoosh.Adapters.Local
+config :book_club, BookClub.Mailer, adapter: Swoosh.Adapters.Local
 
 # Configure esbuild (the version is required)
 config :esbuild,

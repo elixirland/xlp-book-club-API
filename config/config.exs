@@ -7,17 +7,17 @@
 # General application configuration
 import Config
 
-config :phoenix_api,
-  ecto_repos: [PhoenixApi.Repo]
+config :xle_book_club,
+  ecto_repos: [XleBookClub.Repo]
 
 # Configures the endpoint
-config :phoenix_api, PhoenixApiWeb.Endpoint,
+config :xle_book_club, XleBookClubWeb.Endpoint,
   url: [host: "localhost"],
   render_errors: [
-    formats: [html: PhoenixApiWeb.ErrorHTML, json: PhoenixApiWeb.ErrorJSON],
+    formats: [html: XleBookClubWeb.ErrorHTML, json: XleBookClubWeb.ErrorJSON],
     layout: false
   ],
-  pubsub_server: PhoenixApi.PubSub,
+  pubsub_server: XleBookClub.PubSub,
   live_view: [signing_salt: "Wwnjz4hL"]
 
 # Configures the mailer
@@ -27,7 +27,7 @@ config :phoenix_api, PhoenixApiWeb.Endpoint,
 #
 # For production it's recommended to configure a different adapter
 # at the `config/runtime.exs`.
-config :phoenix_api, PhoenixApi.Mailer, adapter: Swoosh.Adapters.Local
+config :xle_book_club, XleBookClub.Mailer, adapter: Swoosh.Adapters.Local
 
 # Configure esbuild (the version is required)
 config :esbuild,

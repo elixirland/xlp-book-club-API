@@ -1,6 +1,6 @@
-defmodule XlPhoenixAPI.PagesTableTest do
-  use XlPhoenixAPI.DataCase
-  import XlPhoenixAPI.Factory
+defmodule BookClub.PagesTableTest do
+  use BookClub.DataCase
+  import BookClub.Factory
 
   test "raises when more than one active page per book" do
     book = insert!(:book)

@@ -1,6 +1,6 @@
-defmodule XlPhoenixAPI.Factory do
-  alias XlPhoenixAPI.Repo
-  alias XlPhoenixAPI.Books.{Book, Page}
+defmodule BookClub.Factory do
+  alias BookClub.Repo
+  alias BookClub.Books.{Book, Page}
 
   def insert!(name, attrs \\ []) do
     name

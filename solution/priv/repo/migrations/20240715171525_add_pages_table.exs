@@ -1,4 +1,4 @@
-defmodule XlPhoenixAPI.Repo.Migrations.AddPagesTable do
+defmodule BookClub.Repo.Migrations.AddPagesTable do
   use Ecto.Migration
 
   def change do

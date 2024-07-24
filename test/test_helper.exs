@@ -1,2 +1,2 @@
 ExUnit.start()
-Ecto.Adapters.SQL.Sandbox.mode(PhoenixApi.Repo, :manual)
+Ecto.Adapters.SQL.Sandbox.mode(XleBookClub.Repo, :manual)
