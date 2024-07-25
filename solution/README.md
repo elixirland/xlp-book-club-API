@@ -41,7 +41,7 @@ Returns a JSON array of objects with the properties `"book"` and `"page"`. If a 
 | 200         | OK                   |
 
 ### Query parameters
-- `title`: The title, or partial title, to filter books by. The filter is case-insensitive and matches partial titles. For example, `/api/books?title=blue` returns all books with `"blue"` in their title, regardless of case.
+- `title`: The title to filter books by. The filter is case-insensitive and matches partial titles. For example, `/api/books?title=blue` returns all books with `"blue"` in their title, regardless of case.
 
 ### Response schema
 ```
