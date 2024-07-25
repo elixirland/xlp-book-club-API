@@ -1,5 +1,5 @@
 # Book Club API
-Welcome to the Book Club API! This Phoenix web application provides a public API to access detailed information about the books in our collection and track the reading progress of our members.
+Welcome to the Book Club API! This Phoenix web application provides a public API to access detailed information about the books in our collection and track their reading progress.
 
 Continue reading to find comprehensive instructions on how to run the application and an overview of the available API endpoints.
 
