@@ -38,9 +38,8 @@ defmodule BookClubWeb.APIController do
 
   defp parse_id(id) do
     case Integer.parse(id) do
-      :error -> {:error, :invalid_id}
-      {id, _} when id < 1 -> {:error, :invalid_id}
-      {id, _} -> {:ok, id}
+      {id, _} when id >= 1 -> {:ok, id}
+      _ -> {:error, :invalid_id}
     end
   end
 
