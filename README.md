@@ -1,5 +1,5 @@
 # Book Club
-This is an Elixirland exercise. Read an introduction to Elixirland here: https://github.com/elixirland.
+This is an Elixirland exercise. Read an introduction to Elixirland at https://github.com/elixirland.
 
 ## Status
 Exercise: ***Not Reviewed***<br>
