@@ -12,8 +12,8 @@ Logger.info("Start database seeding")
 start_time = System.os_time(:millisecond)
 
 # Clear data
-Repo.delete_all(Book)
 Repo.delete_all(Page)
+Repo.delete_all(Book)
 
 # Constants
 n_books = 4_000
