@@ -75,7 +75,7 @@ To keep the exercise simple, you do not have to implement the following:
 You may assume these issues are already implemented somehow, or are not required.
 
 ## How to get started
-Fork this repository and implement your solution in the Phoenix app at the root directory. The solution by Elixirland is located in the directory `/solution`.
+Fork this repository and implement your solution in the Phoenix app at the root directory. The solution by the Elixirland is located in the directory `/solution`.
 
 Alternatively, you can generate a new Phoenix app by running the `mix phx.new` command. See the [documentation](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.New.html) of this command for more information.
 

@@ -37,3 +37,6 @@ npm-debug.log
 
 # Ignore .elixir_ls
 .elixir_ls
+
+# Ignore all .DS_Store
+**/.DS_Store
