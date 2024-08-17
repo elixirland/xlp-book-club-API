@@ -75,9 +75,7 @@ To keep the exercise simple, you do not have to implement the following:
 You may assume these issues are already implemented somehow, or are not required.
 
 ## How to get started
-Fork this repository and implement your solution in the Phoenix app at the root directory. The solution by the Elixirland is located in the directory `/solution`.
-
-Alternatively, you can generate a new Phoenix app by running the `mix phx.new` command. See the [documentation](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.New.html) of this command for more information.
+Start your implementation of the exercise by generating a new Phoenix app with the `mix phx.new` command. See the [documentation](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.New.html) of this command for more information.
 
 ## Example solution
-You can find the Elixirland solution to this exercise in its GitHub repository, inside the `/solution` directory.
+You can find the author's solution to this exercise in the exercise's GitHub repository, inside the `/solution` directory.
