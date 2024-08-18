@@ -8,7 +8,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
  
 ### Added
 - Exercise description
-
 - Example solution
-
 - Exercise thumbnail
