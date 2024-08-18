@@ -16,5 +16,38 @@ defmodule BookClub.PageTest do
 
       assert changeset.valid?
     end
+
+    test "checks if max one active page per book" do
+      book = insert!(:book)
+      insert!(:page, book_id: book.id, status: :active, number: 1)
+
+      result =
+        Page.changeset(%Page{}, %{
+          number: 2,
+          content: "content",
+          status: :active,
+          book_id: book.id
+        })
+
+      refute result.valid?
+      assert {"already has an active page", _} = result.errors[:status]
+    end
+
+    test "checks if book's page numbers are sequential" do
+      book = insert!(:book)
+      insert!(:page, book_id: book.id, number: 1)
+      insert!(:page, book_id: book.id, number: 2)
+
+      result =
+        Page.changeset(%Page{}, %{
+          number: 4,
+          content: "content",
+          status: :inactive,
+          book_id: book.id
+        })
+
+      refute result.valid?
+      assert {"is not sequential", _} = result.errors[:number]
+    end
   end
 end
