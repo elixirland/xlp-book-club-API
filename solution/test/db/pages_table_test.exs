@@ -14,25 +14,15 @@ defmodule BookClub.PagesTableTest do
     )
   end
 
-  test "raises when page number is not positive" do
-    book = insert!(:book)
-
-    assert_raise(
-      Ecto.ConstraintError,
-      fn ->
-        insert!(:page, number: 0, book_id: book.id)
-      end
-    )
-  end
-
-  test "raises when page number is not unique per book" do
+  test "raises when numbers of pages are not sequential" do
     book = insert!(:book)
     insert!(:page, number: 1, book_id: book.id)
+    insert!(:page, number: 2, book_id: book.id)
 
     assert_raise(
-      Ecto.ConstraintError,
+      Postgrex.Error,
       fn ->
-        insert!(:page, number: 1, book_id: book.id)
+        insert!(:page, number: 4, book_id: book.id)
       end
     )
   end

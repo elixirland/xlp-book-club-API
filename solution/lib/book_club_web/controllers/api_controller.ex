@@ -31,6 +31,7 @@ defmodule BookClubWeb.APIController do
 
   defp render_pretty_json(conn, data) do
     json_string = Jason.encode!(data, pretty: true)
+
     conn
     |> put_resp_content_type("application/json")
     |> send_resp(200, json_string)

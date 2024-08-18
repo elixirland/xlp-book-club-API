@@ -19,6 +19,7 @@ defmodule XleBookClubWeb.APIControllerTest do
       conn = get(conn, ~p"/api/books?title=blue")
 
       assert body = json_response(conn, 200)
+
       assert [
                %{"book" => %{"title" => "Blue"}},
                %{"book" => %{"title" => "Light blue"}}
@@ -60,6 +61,7 @@ defmodule XleBookClubWeb.APIControllerTest do
 
     test "returns a bad request status when an invalid id is given", %{conn: conn} do
       invalid_ids = ["hi123", "0", "-1"]
+
       for id <- invalid_ids do
         conn = get(conn, ~p"/api/books/#{id}")
         assert %{"error" => _} = json_response(conn, :bad_request)
