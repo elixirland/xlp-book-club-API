@@ -3,22 +3,20 @@ defmodule BookClub.Repo.Migrations.AddPagesTable do
 
   def change do
     create table(:pages) do
-      add(:number, :integer, null: false)
-      add(:content, :text, null: false)
-      add(:status, :string, null: false)
-      add(:book_id, references(:books), null: false)
+      add :number, :integer, null: false
+      add :content, :text, null: false
+      add :status, :string, null: false
+      add :book_id, references(:books), null: false
 
       timestamps()
     end
 
-    create(
-      unique_index(
-        :pages,
-        [:book_id, :status],
-        where: "status = 'active'",
-        name: :max_one_active_page_per_book
-      )
-    )
+    create unique_index(
+             :pages,
+             [:book_id, :status],
+             where: "status = 'active'",
+             name: :max_one_active_page_per_book
+           )
 
     # Trigger that checks if the page numbers of a book form an uninterrupted
     # sequence starting from 1
@@ -54,15 +52,13 @@ defmodule BookClub.Repo.Migrations.AddPagesTable do
     execute("DROP TRIGGER IF EXISTS ensure_page_sequence ON pages")
     execute("DROP FUNCTION IF EXISTS check_page_sequence")
 
-    drop(
-      unique_index(
-        :pages,
-        [:book_id, :status],
-        where: "status = 'active'",
-        name: :max_one_active_page_per_book
-      )
-    )
+    drop unique_index(
+           :pages,
+           [:book_id, :status],
+           where: "status = 'active'",
+           name: :max_one_active_page_per_book
+         )
 
-    drop(table(:pages))
+    drop table(:pages)
   end
 end
