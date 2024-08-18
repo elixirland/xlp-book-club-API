@@ -19,9 +19,9 @@ defmodule BookClub.BooksTest do
 
     test "lists books with first page if none are active" do
       %{id: id} = insert!(:book)
-      insert!(:page, book_id: id, number: 3)
       insert!(:page, book_id: id, number: 1)
       insert!(:page, book_id: id, number: 2)
+      insert!(:page, book_id: id, number: 3)
 
       result = Books.list_books_with_active_or_first_page()
 
@@ -87,9 +87,9 @@ defmodule BookClub.BooksTest do
 
     test "fetches book with first page if none are active" do
       %{id: id} = insert!(:book)
-      insert!(:page, book_id: id, number: 3)
       insert!(:page, book_id: id, number: 1)
       insert!(:page, book_id: id, number: 2)
+      insert!(:page, book_id: id, number: 3)
 
       result = Books.get_book_with_active_or_first_page(id)
 
