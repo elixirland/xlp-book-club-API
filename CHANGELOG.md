@@ -7,6 +7,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [v0.1.0] - 2024-08-18
  
 ### Added
-- Exercise description in README.md
-- Thumbnail
+- Exercise description
 - Example solution
+- Exercise thumbnail
