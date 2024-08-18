@@ -1,5 +1,6 @@
 defmodule BookClub.Books.Page do
   use Ecto.Schema
+  import Ecto.Query, warn: false
   import Ecto.Changeset
   alias BookClub.Books.Book
 
@@ -32,6 +33,5 @@ defmodule BookClub.Books.Page do
     |> cast(attrs, [:number, :content, :status, :book_id])
     |> validate_required([:number, :content, :status])
     |> validate_inclusion(:status, @statuses)
-    |> validate_number(:number, greater_than: 0)
   end
 end
