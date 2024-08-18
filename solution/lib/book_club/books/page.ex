@@ -29,6 +29,7 @@ defmodule BookClub.Books.Page do
   end
 
   @doc false
+  @spec changeset(t, map) :: Ecto.Changeset.t()
   def changeset(page, attrs) do
     page
     |> cast(attrs, [:number, :content, :status, :book_id])
@@ -38,6 +39,7 @@ defmodule BookClub.Books.Page do
     |> validate_page_sequence()
   end
 
+  @spec validate_max_one_active_page(Ecto.Changeset.t()) :: Ecto.Changeset.t()
   defp validate_max_one_active_page(changeset) do
     book_id = get_field(changeset, :book_id)
     status = get_field(changeset, :status)
@@ -58,6 +60,7 @@ defmodule BookClub.Books.Page do
     end
   end
 
+  @spec validate_page_sequence(Ecto.Changeset.t()) :: Ecto.Changeset.t()
   defp validate_page_sequence(changeset) do
     book_id = get_field(changeset, :book_id)
     number = get_field(changeset, :number)
