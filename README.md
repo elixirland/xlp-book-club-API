@@ -50,7 +50,7 @@ Develop a Phoenix app that models books and their pages and exposes two endpoint
 > You may use a `README.md` (at the root directory) for documentation purposes.
 
 ## Assumptions
-To keep the exercise simple, you do not have to implement the following:
+To keep the project simple, you do not have to implement the following:
 
   - Client authentication and/or authorization
   - Rate limiting
@@ -61,7 +61,7 @@ To keep the exercise simple, you do not have to implement the following:
 You may assume these issues are already implemented somehow, or are not required.
 
 ## How to get started
-Start your implementation of the exercise by generating a new Phoenix app with the `mix phx.new` command. See the [documentation](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.New.html) of this command for more information.
+Start your implementation of the project by generating a new Phoenix app with the `mix phx.new` command. See the [documentation](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.New.html) of this command for more information.
 
-## Example solution
-You can find the author's solution to this exercise in the exercise's GitHub repository, inside the `/solution` directory.
+## Example
+You can find the author's example solution to this project in the project's GitHub repository, inside the `/example` directory.
