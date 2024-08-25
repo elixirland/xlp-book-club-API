@@ -1,4 +1,4 @@
-# Exercise: Book Club API
+# Project: Book Club API
 
 ## Introduction
 Chris is a member of a book club and wants to develop a simple web API to streamline their group activities. His vision is to create a system that stores books and tracks the pages currently being read and discussed. The book club reads multiple books simultaneously. Although there is already a system in place for tracking who is reading which books, there is no easy way to find the current page being read in any given book.
