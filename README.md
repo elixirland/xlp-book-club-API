@@ -5,6 +5,11 @@ Chris is a member of a book club and wants to develop a simple web API to stream
 
 Chris shares his idea with other members who are also developers. They brainstorm additional features for future stages of the API that they could build together. For now, Chris will create the first version of the API. He and the other developers agreed to include functionality to seed the database with books and pages in this initial version, allowing Chris to easily demonstrate the API on his machine.
 
+## Preview
+Watch this short clip to see an example implemenation in action.
+
+![](https://github.com/elixirland/xlp-book-club-API/raw/main/preview.webm)
+
 ## Task description
 Develop a Phoenix app that models books and their pages and exposes two endpoints through an API. Ensure your implementation meets the following requirements:
   - Adheres to idiomatic Elixir practices
