@@ -8,7 +8,7 @@ Chris shares his idea with other members who are also developers. They brainstor
 ## Preview
 Watch this short clip to see an example implemenation in action.
 
-![](/elixirland/xlp-book-club-API/raw/main/preview.mp4)
+[preview.webm](https://github.com/user-attachments/assets/c03620c5-c1b7-4002-96a4-46a1210c0be7)
 
 ## Task description
 Develop a Phoenix app that models books and their pages and exposes two endpoints through an API. Ensure your implementation meets the following requirements:
