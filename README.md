@@ -1,5 +1,7 @@
 # Project: Book Club API
 
+![thumbnail](https://github.com/user-attachments/assets/1c6f0cd0-8af9-4f61-ae26-a2d95f4600c9)
+
 ## Introduction
 Chris is a member of a book club and wants to develop a simple web API to streamline their group activities. His vision is to create a system that stores books and tracks the pages currently being read and discussed. The book club reads multiple books simultaneously. Although there is already a system in place for tracking who is reading which books, there is no easy way to find the current page being read in any given book.
 
