@@ -8,7 +8,7 @@ Chris shares his idea with other members who are also developers. They brainstor
 ## Preview
 Watch this short clip to see an example implemenation in action.
 
-[preview.webm](https://github.com/user-attachments/assets/f6a21d2a-3b0f-46e8-824f-5ae61e1170c2)
+[preview.webm](https://github.com/user-attachments/assets/23bc2ceb-2bbe-4ee9-b6d6-76940bb9b521)
 
 ## Task description
 Develop a Phoenix app that models books and their pages and exposes two endpoints through an API. Ensure your implementation meets the following requirements:
