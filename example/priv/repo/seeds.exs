@@ -16,8 +16,8 @@ Repo.delete_all(Page)
 Repo.delete_all(Book)
 
 # Constants
-n_books = 1_000
-n_pages_per_book = 20
+n_books = 600
+n_pages_per_book = 400
 inserted_at = ~N[2000-01-01 12:00:00]
 batch_size = 100
 max_concurrency = 8
@@ -35,12 +35,14 @@ books =
 insert_batch_fn = fn batch -> Repo.insert_all(Book, batch, returning: [:id]) end
 
 book_ids =
-  Enum.chunk_every(books, batch_size)
+  books
+  |> Enum.chunk_every(batch_size)
   |> Task.async_stream(insert_batch_fn, max_concurrency: max_concurrency)
   |> Enum.flat_map(fn {:ok, {_, books}} -> books end)
   |> Enum.map(fn %{id: id} -> id end)
 
-# Batch insert multiple pages for each book. Let some books have an active page.
+# Batch insert multiple pages for each book
+# Let some books have an active page
 build_book_pages_fn =
   fn book_id ->
     for i <- 1..n_pages_per_book do
@@ -60,18 +62,9 @@ build_book_pages_fn =
   end
 
 book_ids
+|> Enum.flat_map(&build_book_pages_fn.(&1))
 |> Enum.chunk_every(batch_size)
-|> Task.async_stream(
-  fn batch ->
-    Enum.each(
-      batch,
-      fn book_id ->
-        Repo.insert_all(Page, build_book_pages_fn.(book_id))
-      end
-    )
-  end,
-  max_concurrency: max_concurrency
-)
+|> Task.async_stream(&Repo.insert_all(Page, &1), max_concurrency: max_concurrency)
 |> Stream.run()
 
 # Teardown
