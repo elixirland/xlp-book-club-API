@@ -60,7 +60,7 @@ Watch this short clip to see an example implemenation in action.
   - Includes information about the response schemas
 
 > [!TIP]
-> You may use a `README.md` (at the root directory) store the documentation.
+> You may use a `README.md` (at the root directory) to store the documentation.
 
 ## Assumptions
 To keep the project simple, you do not have to implement the following:
