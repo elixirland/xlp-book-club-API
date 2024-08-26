@@ -37,6 +37,7 @@ defmodule BookClub.Books.Page do
     |> validate_inclusion(:status, @statuses)
     |> validate_max_one_active_page()
     |> validate_page_sequence()
+    |> unique_constraint(:number, name: :unique_page_number_per_book)
   end
 
   @spec validate_max_one_active_page(Ecto.Changeset.t()) :: Ecto.Changeset.t()
