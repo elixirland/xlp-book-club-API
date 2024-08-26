@@ -11,7 +11,9 @@ The book club organizes reoccuring meeting for book that is currently being read
 Because the club is juggling multiple books being read at the same time, it easy to lose track of what books are being read and the last read pages of those books. Can you save the day by creating an API that helps them keep everything organized and on track?
 
 ## Task description
-Create an application using Phoenix that exposes an API to manage a collection of books and their pages. Your implementation should meet the following criteria:
+Create an application using Phoenix that exposes an API to manage a collection of books and their pages.
+
+Your implementation should meet the following criteria:
 
   - Follows idiomatic Elixir practices
   -	Is thoroughly tested
