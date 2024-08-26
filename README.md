@@ -2,7 +2,7 @@
 
 # Project: Book Club API
 
-## Introduction: Help a Book Club Keep Track of Their Reading!
+## Help a Book Club Keep Track of Their Reading!
 
 A local book club needs your help! They’re looking for a system to store their collection of books and monitor each book’s reading progress.
 
