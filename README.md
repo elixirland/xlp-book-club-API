@@ -2,25 +2,31 @@
 
 # Project: Book Club API
 
-## Introduction
-Chris is a member of a book club and wants to develop a simple web API to streamline their group activities. His vision is to create a system that stores books and tracks the pages currently being read and discussed. The book club reads multiple books simultaneously. Although there is already a system in place for tracking who is reading which books, there is no easy way to find the current page being read in any given book.
+## Introduction: Help a Book Club Keep Track of Their Reading!
 
-Chris shares his idea with other members who are also developers. They brainstorm additional features for future stages of the API that they could build together. For now, Chris will create the first version of the API. He and the other developers agreed to include functionality to seed the database with books and pages in this initial version, allowing Chris to easily demonstrate the API on his machine.
+A local book club needs your help! They’re looking for a system to store their collection of books and monitor each book’s reading progress.
+
+The book club organizes reoccuring meeting for book that is currently being read, during which members discuss the pages they've read at home. There are multiple books that are being read in parallel, and members can freely join any of the discussions.
+
+Because the club is juggling multiple books being read at the same time, it easy to lose track of what books are being read and the last read pages of those books. Can you save the day by creating an API that helps them keep everything organized and on track?
+
+## Task description
+Create an application using Phoenix that exposes an API to manage a collection of books and their pages. Your implementation should meet the following criteria:
+
+  - Follows idiomatic Elixir practices
+  -	Is thoroughly tested
+  -	Is easily understandable and maintainable by other developers
+
+Refer to the ‘Requirements’ section for a detailed list of specifications for your application.
 
 ## Preview
 Watch this short clip to see an example implemenation in action.
 
 [preview.webm](https://github.com/user-attachments/assets/23bc2ceb-2bbe-4ee9-b6d6-76940bb9b521)
 
-## Task description
-Develop a Phoenix app that models books and their pages and exposes two endpoints through an API. Ensure your implementation meets the following requirements:
-  - Adheres to idiomatic Elixir practices
-  - Is well-tested
-  - Is easily understandable by others, not just yourself
-
 ## Requirements
 ### Data model
-  - Books and pages are stored in a PostgreSQL database
+  - Books and pages are stored in a database
   - Each book has a title
   - Each book can have multiple pages
   - Each page has text content
@@ -28,9 +34,9 @@ Develop a Phoenix app that models books and their pages and exposes two endpoint
 
 ### Seeding
   - Running `mix ecto.setup` creates the database tables but also seeds the database
-  - Seeding inserts 4,000 books that each have 400 pages
+  - Seeding inserts 800 books that each have 20 pages
   - Some seeded books have an active page, but not all
-  - Seeding is fast
+  - Seeding does not take more than a few seconds
 
 > [!TIP]
 > You can use Elixirland's [Xl Faker](https://hex.pm/packages/xl_faker) package to generate random titles and page content.
@@ -54,7 +60,7 @@ Develop a Phoenix app that models books and their pages and exposes two endpoint
   - Includes information about the response schemas
 
 > [!TIP]
-> You may use a `README.md` (at the root directory) for documentation purposes.
+> You may use a `README.md` (at the root directory) store the documentation.
 
 ## Assumptions
 To keep the project simple, you do not have to implement the following:
