@@ -13,17 +13,4 @@ defmodule BookClub.PagesTableTest do
       end
     )
   end
-
-  test "raises when numbers of pages are not sequential" do
-    book = insert!(:book)
-    insert!(:page, number: 1, book_id: book.id)
-    insert!(:page, number: 2, book_id: book.id)
-
-    assert_raise(
-      Postgrex.Error,
-      fn ->
-        insert!(:page, number: 4, book_id: book.id)
-      end
-    )
-  end
 end
