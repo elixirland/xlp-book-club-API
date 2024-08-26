@@ -34,7 +34,7 @@ Watch this short clip to see an example implemenation in action.
 
 ### Seeding
   - Running `mix ecto.setup` creates the database tables but also seeds the database
-  - Seeding inserts 800 books that each have 20 pages
+  - Seeding inserts 600 books that each have 400 pages
   - Some seeded books have an active page, but not all
   - Seeding does not take more than a few seconds
 
