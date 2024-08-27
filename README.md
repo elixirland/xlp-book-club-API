@@ -1,5 +1,3 @@
-![thumbnail](https://github.com/user-attachments/assets/1c6f0cd0-8af9-4f61-ae26-a2d95f4600c9)
-
 # Book Club API
 
 ## Help a Book Club Keep Track of Their Reading!
