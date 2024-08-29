@@ -22,7 +22,7 @@ Refer to the ‘Requirements’ section for a detailed list of specifications fo
 ## Preview
 Watch this short clip to see an example implemenation in action.
 
-[preview.webm](https://github.com/user-attachments/assets/23bc2ceb-2bbe-4ee9-b6d6-76940bb9b521)
+[preview.webm](https://github.com/user-attachments/assets/135893ed-42ab-420b-925f-4c736ae1db78)
 
 ## Requirements
 ### Data model
