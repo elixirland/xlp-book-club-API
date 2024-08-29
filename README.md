@@ -62,7 +62,7 @@ Watch this short clip to see an example implemenation in action.
 > [!TIP]
 > You may use a `README.md` (at the root directory) to store the documentation.
 
-## Assumptions
+## Limitations
 To keep the project simple, you do not have to implement the following:
 
   - Client authentication and/or authorization
