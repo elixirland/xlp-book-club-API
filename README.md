@@ -6,7 +6,7 @@ A local book club needs your help! They’re looking for a system to store the b
 
 Here is how the book club works.
 
-The club organizes social events during which members discuss the pages of a book they read before coming to the event. At any time, there are multiple books that are read in parallel. Members can choose which meetings they attend. Usually members pick on of the books that are being read and only join the events of that book.
+The club organizes social events during which members discuss the pages of a book they read before coming to the event. At any time, there are multiple books that are read in parallel. Members can choose which meetings they attend. Usually members pick one book and only join the events of that book.
 
 Because the club is juggling multiple books being read at the same time, it easy to lose track of what books are being read and the last read pages of those books. Can you save the day by creating an API that helps them keep everything organized and on track?
 
