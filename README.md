@@ -27,11 +27,11 @@ Watch this short clip to see the final result in action.
 ## Requirements
 ### Data model
   - Books and pages are stored in a database
-  - Utilizes the Ecto library for data management and querying
   - Each book has a title
   - Each book can have multiple pages
   - Each page has text content
   - A book can have one active page (or none)
+  - Utilize the Ecto library for data management and querying
 
 > [!TIP]
 > The `mix phx.gen` command in Phoenix creates an application configured to use PostgreSQL by default. For a quick start, consider sticking with PostgreSQL as your database.
