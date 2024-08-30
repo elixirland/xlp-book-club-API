@@ -76,3 +76,5 @@ To keep the project simple, you do not have to implement the following:
   - Pagination
 
 You may assume these issues are already implemented somehow, or are not required.
+
+For an added challenge, try implementing one or more of these features. However, keep in mind that the example implementation provided by Elixirland does not cover these features.
