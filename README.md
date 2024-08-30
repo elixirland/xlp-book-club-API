@@ -50,7 +50,7 @@ To be able to showcase your application, you need to allow for database seeding.
 ### Endpoints
 #### GET `/api/books`
   - An endpoint that fetching all books in the alphabetical order of their titles
-  - Retrieves the books along with their active pages, or if non exisits, their first pages
+  - Retrieves the books along with their active page or, in case a book doesn't have an active page, their first page
   - Allows for filtering by partial book title
   - Returns JSON
     
