@@ -20,7 +20,7 @@ Your implementation should meet the following criteria:
 Refer to the ‘Requirements’ section for a detailed list of specifications for your application.
 
 ## Preview
-Watch this short clip to see an example implemenation in action.
+Watch this short clip to see the final result in action.
 
 [preview.webm](https://github.com/user-attachments/assets/135893ed-42ab-420b-925f-4c736ae1db78)
 
