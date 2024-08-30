@@ -27,10 +27,14 @@ Watch this short clip to see an example implemenation in action.
 ## Requirements
 ### Data model
   - Books and pages are stored in a database
+  - Utilizes the Ecto library for data management and querying
   - Each book has a title
   - Each book can have multiple pages
   - Each page has text content
   - A book can have one active page (or none)
+
+> [!TIP]
+> The `mix phx.gen` command in Phoenix creates an application configured to use PostgreSQL by default. For a quick start, consider sticking with PostgreSQL as your database.
 
 ### Seeding
   - Running `mix ecto.setup` creates the database tables but also seeds the database
@@ -60,7 +64,7 @@ Watch this short clip to see an example implemenation in action.
   - Includes information about the response schemas
 
 > [!TIP]
-> You may use a `README.md` (at the root directory) to store the documentation.
+> Include a README.md file in the root directory of your application to provide documentation.
 
 ## Limitations
 To keep the project simple, you do not have to implement the following:
