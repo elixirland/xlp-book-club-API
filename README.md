@@ -66,7 +66,7 @@ Watch this short clip to see the final result in action.
 > [!TIP]
 > Include a README.md file in the root directory of your application to provide documentation.
 
-## Limitations
+## Optional
 To keep the project simple, you do not have to implement the following:
 
   - Client authentication and/or authorization
@@ -74,7 +74,5 @@ To keep the project simple, you do not have to implement the following:
   - Formatting of page text content
   - Non-textual content on pages
   - Pagination
-
-You may assume these issues are already implemented somehow, or are not required.
 
 For an added challenge, try implementing one or more of these features. However, keep in mind that the example implementation provided by Elixirland does not cover these features.
