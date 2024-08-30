@@ -2,22 +2,20 @@
 
 ## Help a Book Club Keep Track of Their Reading!
 
-A local book club needs your help! They’re looking for a system to store their collection of books and monitor each book’s reading progress.
+A local book club needs your help! They’re looking for a system to store the books in their collection and monitor the reading progress for the books that are currently being read.
 
-The book club organizes reoccuring meeting for book that is currently being read, during which members discuss the pages they've read at home. There are multiple books that are being read in parallel, and members can freely join any of the discussions.
+Here is how the book club works. The club organizes social events during which members discuss the pages of a book they read before coming to the event. At any time, there are multiple books that are read in parallel. Members can choose which meetings they attend. Usually members pick on of the books that are being read and only join the events of that book.
 
 Because the club is juggling multiple books being read at the same time, it easy to lose track of what books are being read and the last read pages of those books. Can you save the day by creating an API that helps them keep everything organized and on track?
 
 ## Task description
-Create an application using Phoenix that exposes an API to manage a collection of books and their pages.
+Create an application using Phoenix that exposes an API for listing the club's books, along with the last page that was read.
 
 Your implementation should meet the following criteria:
 
   - Follows idiomatic Elixir practices
   -	Is thoroughly tested
   -	Is easily understandable and maintainable by other developers
-
-Refer to the ‘Requirements’ section for a detailed list of specifications for your application.
 
 ## Preview
 Watch this short clip to see the final result in action.
