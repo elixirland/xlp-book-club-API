@@ -2,13 +2,13 @@
 
 ## Help a Book Club Keep Track of Their Reading!
 
-A local book club needs your help! They’re looking for a system to store their books and monitor the reading progress for the books that are currently being read.
+A local book club needs your help! They’re looking for a system to store their books and monitor the reading progress for the books that are being read at any given moment in time.
 
 Here is how the book club works.
 
-The club organizes social events during which members discuss the pages of a book they read before coming to the event. At any time, there are multiple books that are being read in parallel. Members can choose which meetings they attend. Usually members pick one book and only join the events of that book.
+The club organizes social events during which members discuss the pages of a book they read before coming to the event. At any time, there are multiple books that are being read in parallel. Members can choose which events they attend. Usually members pick one book and only join the events of that book.
 
-Because the club is juggling multiple books being read at the same time, it easy to lose track of what books are being read and where each book left off. Can you save the day by creating an API that helps them keep everything organized and on track?
+Because the club is juggling multiple books being read at the same time, it's easy to lose track of what books are being read and where each book left off. Can you save the day by creating an API that helps them keep everything organized and on track?
 
 ## Task description
 Create an application using Phoenix that exposes an API for listing the club's books, along with the last page that was read.
@@ -16,7 +16,7 @@ Create an application using Phoenix that exposes an API for listing the club's b
 Your implementation should meet the following criteria:
 
   - Follows idiomatic Elixir practices
-  -	Is thoroughly tested
+  -	Is tested
   -	Is easily understandable and maintainable by other developers
 
 ## Preview
@@ -37,12 +37,14 @@ Watch this short clip to see the final result in action.
 > The `mix phx.gen` command in Phoenix creates an application configured to use PostgreSQL by default. For a quick start, consider sticking with PostgreSQL as your database.
 
 ### Seeding
+To be able to showcase your application, you need to allow for database seeding. Note that the seeding only serves for demonstration (and development) purposes 
+
   - Running `mix ecto.setup` creates the database tables but also seeds the database
   - Seeding inserts 600 books that each have 400 pages
   - Some seeded books have an active page, but not all
   - Seeding does not take more than a few seconds
 
-> [!TIP]
+> [!NOTE]
 > You can use Elixirland's [Xl Faker](https://hex.pm/packages/xl_faker) package to generate random titles and page content.
 
 ### Endpoints
