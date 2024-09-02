@@ -13,7 +13,7 @@ Because the club is juggling multiple books being read at the same time, it's ea
 ## Task
 Create an API for listing a book club's books, along with the last page that was read.
 
-Use:
+When implementing the project, you must use:
 - Phoenix
 - Ecto
 
