@@ -1,6 +1,6 @@
 # Book Club API
 
-## Help a Book Club Keep Track of Their Reading!
+## Introduction: Help a Book Club Keep Track of Their Reading!
 
 A local book club needs your help! They’re looking for a system to store their books and monitor the reading progress for the books that are being read at any given moment in time.
 
@@ -10,19 +10,12 @@ The club organizes social events during which members discuss the pages of a boo
 
 Because the club is juggling multiple books being read at the same time, it's easy to lose track of what books are being read and where each book left off. Can you save the day by creating an API that helps them keep everything organized and on track?
 
-## Task description
-Create an application using Phoenix that exposes an API for listing the club's books, along with the last page that was read.
+## Task
+Create an API for listing a book club's books, along with the last page that was read.
 
-Your implementation should meet the following criteria:
-
-  - Follows idiomatic Elixir practices
-  -	Is tested
-  -	Is easily understandable and maintainable by other developers
-
-## Preview
-Watch this short clip to see the final result in action.
-
-[preview.webm](https://github.com/user-attachments/assets/135893ed-42ab-420b-925f-4c736ae1db78)
+Use:
+- Phoenix
+- Ecto
 
 ## Requirements
 ### Data model
@@ -31,7 +24,6 @@ Watch this short clip to see the final result in action.
   - Each book can have multiple pages
   - Each page has text content
   - A book can have one active page (or none)
-  - Utilize the Ecto library for data management and querying
 
 > [!TIP]
 > The `mix phx.gen` command in Phoenix creates an application configured to use PostgreSQL by default. For a quick start, consider sticking with PostgreSQL as your database.
@@ -60,7 +52,7 @@ To be able to showcase your application, you need to allow for database seeding.
   - Returns JSON
 
 ### Documentation
-  - A detailed manual that provides users with all the information they need
+  - A manual that provides users with all the information they need
   - Includes instructions about how to run and seed the app
   - Includes instructions how to use the endpoints
   - Includes information about the response schemas
@@ -68,8 +60,8 @@ To be able to showcase your application, you need to allow for database seeding.
 > [!TIP]
 > Include a README.md file in the root directory of your application to provide documentation.
 
-## Optional
-To keep the project simple, you do not have to implement the following:
+## Taking it further
+To keep the project simple, the requirements are kept relatively simple. However, if you are looking for an extra challenge, consider implementing one or several of the following features:
 
   - Client authentication and/or authorization
   - Rate limiting
@@ -77,4 +69,4 @@ To keep the project simple, you do not have to implement the following:
   - Non-textual content on pages
   - Pagination
 
-For an added challenge, try implementing one or more of these features. However, keep in mind that the example implementation provided by Elixirland does not cover these features.
+However, keep in mind that the example implementation provided by Elixirland does not cover these features.
