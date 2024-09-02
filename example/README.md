@@ -18,7 +18,7 @@ This command performs the following actions:
 
   - **Creates the database**: Initializes the required database instance for the application.
   - **Creates tables**: Generates all necessary tables within the database.
-  - **Seeds the database**: Populates the database with 4,000 books, each having 10 pages. All book and page data is randomly generated.
+  - **Seeds the database**: Populates the database with 600 books, each having 400 pages. All book and page data is randomly generated.
 
 ### Step 2: Start the server
 To start the server, run the following command in your terminal at the root directory of the application:
