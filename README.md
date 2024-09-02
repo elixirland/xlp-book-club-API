@@ -2,13 +2,13 @@
 
 ## Introduction: Help a Book Club Keep Track of Their Reading!
 
-A local book club needs your help! They’re looking for a system to store their books and monitor reading progress.
+A local book club needs your help! They’re looking for a system to store their books and track reading progress.
 
-Here is how the book club works.
+Here’s how the book club works:
 
-The club organizes social events during which members discuss the pages of a book they read before coming to the event. At any time, there are multiple books that are being read in parallel. Members can choose which events they attend. Usually members pick one book and only join the events of that book.
+The club organizes social events where members discuss the pages of a book they read beforehand. At any given time, multiple books are being read simultaneously. Members can choose which events to attend, but they usually select one book and only participate in the events for that book.
 
-Because the club is juggling multiple books being read at the same time, it's easy to lose track of what books are being read and where each book left off. Can you save the day by creating an API that helps them keep everything organized and on track?
+Since the club is managing multiple books at once, it’s easy to lose track of which books are being read and where each one left off. Can you save the day by creating an API that helps them keep everything organized and on track?
 
 ## Task
 Create an API for listing a book club's books, along with the last page that was read.
