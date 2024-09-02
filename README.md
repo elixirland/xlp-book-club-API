@@ -2,7 +2,7 @@
 
 ## Introduction: Help a Book Club Keep Track of Their Reading!
 
-A local book club needs your help! They’re looking for a system to store their books and monitor the reading progress for the books that are being read at any given moment in time.
+A local book club needs your help! They’re looking for a system to store their books and monitor reading progress.
 
 Here is how the book club works.
 
